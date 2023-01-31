@@ -1,2 +1,2 @@
 
-Sample Java Applicaiton V3.2 committing for pipeline 
+Sample Java applicaiton V3.2 committing for pipeline 
