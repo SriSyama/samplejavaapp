@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Login to Nexus
                 withCredentials([usernamePassword(credentialsId: 'NEXUS_CREDENTIALS', passwordVariable: 'NEXUS_PASSWORD', usernameVariable: 'NEXUS_USERNAME')]) {
-                    sh "mvn deploy -Dmaven.test.skip=true -DaltDeploymentRepository=releases::default::http://3.112.30.92:8081/repository/sample-release -DnexusUsername=$NEXUS_USERNAME -DnexusPassword=$NEXUS_PASSWORD"
+                    sh "mvn deploy -Dmaven.test.skip=true -DaltDeploymentRepository=releases::default::http://3.112.30.92:8081/repository/sample-release/ -DnexusUsername=$NEXUS_USERNAME -DnexusPassword=$NEXUS_PASSWORD"
                 }
             }
         }
