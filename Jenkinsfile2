@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Build steps go here
+                sh "mvn package"
             }
         }
         stage('Publish to Nexus') {
